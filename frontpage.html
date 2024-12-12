@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Dashboard</title>
+    <link rel="stylesheet" href="frontpage.css">
+    <script>
+        function showSection(sectionId) {
+            // Hide both sections
+            document.getElementById('about-us').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Sentiment Analysis Dashboard</h1>
+        <p>Analyze social media sentiment instantly!</p>
+    </header>
+
+    <div class="container">
+        <!-- Input Section -->
+        <div class="input-section">
+            <h2>Enter Social Media Link</h2>
+            <textarea placeholder="Paste the link to the social media post here..."></textarea>
+            <button>Start Analysis</button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-section">
+            <h2>Analysis Result</h2>
+            <div class="output-card">
+                <p><strong>Sentiment:</strong> Positive</p>
+                <p><strong>Confidence:</strong> 93.05%</p>
+                <p><strong>Emoji:</strong> 😊</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Sentiment Analysis Project Team</p>
+        <p>
+            <a href="javascript:void(0);" onclick="showSection('about-us')">About Us</a> | 
+            <a href="javascript:void(0);" onclick="showSection('contact')">Contact</a>
+        </p>
+    </footer>
+
+    <!-- About Us Section -->
+    <section id="about-us" style="display: none;">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers and researchers working on AI and sentiment analysis projects.</p>
+        <p><strong>Team Members:</strong></p>
+        <ul>
+            <li>Nimit Kwatra - Email: ns0058@srmist.edu.in</li>
+            <li>Sunidhi Singh - Email: ss9690@srmist.edu.in</li>
+            <li>Devesh Tomar - Email: ds4957@srmist.edu.in</li>
+            <li>Shrikant Choudhary - Email: ss6372@srmist.edu.in</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="display: none;">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to us via email:</p>
+        <ul>
+            <li>Nimit Kwatra - Email: ns0058@srmist.edu.in</li>
+            <li>Sunidhi Singh - Email: ss9690@srmist.edu.in</li>
+            <li>Devesh Tomar - Email: ds4957@srmist.edu.in</li>
+            <li>Shrikant Choudhary - Email: ss6372@srmist.edu.in</li>
+        </ul>
+    </section>
+</body>
+</html>
