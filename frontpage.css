@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color:#f3b226;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.input-section, .output-section {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 45%;
+}
+
+.input-section textarea {
+    width: 96%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.input-section button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #f3b226;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #ffffff;
+}
+
+.output-section {
+    text-align: center;
+}
+
+.output-section h2 {
+    margin-bottom: 20px;
+}
+
+.output-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.output-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Existing CSS code remains the same */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+
+footer p a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.team-details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.team-details p {
+    margin: 5px 0;
+}
+
+.team-details strong {
+    font-size: 1rem;
+}
